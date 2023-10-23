@@ -1,4 +1,4 @@
-A small quiz
+A small web app that displays a list of quizzes according to user's input and stores questions to the database
 
 - Recommend to use virtual environment. 
 To install it: 
@@ -21,6 +21,10 @@ pip install -r requirements.txt
 
 sudo apt install sqlite3
 
+- To see all database entries:
+
+select * from question;
+
 - To run the app:
 
 
@@ -30,4 +34,5 @@ flask run
 
 flask run --debug
 
-NB: You don't need to set export FLASK_APP=microblog.py since I did it myself. You only need to install python-dotenv (requirements.txt)
+
+NB: You don't need to set export FLASK_APP= since I did it myself. You only need to install python-dotenv (requirements.txt)
