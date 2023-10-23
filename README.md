@@ -11,11 +11,11 @@ venv/bin/activate
 
 - To install neccessary libraries:
 
-  pip install -r requirements.txt
+pip install -r requirements.txt
 
 - To run the app:
 
-  flask run
+flask run
 
 - Debug mode:
 
