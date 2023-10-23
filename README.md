@@ -3,17 +3,21 @@ A small quiz
 - Recommend to use virtual environment. 
 To install it: 
 
+
 python3 -m venv venv
 
-- To activate a virtual environment source 
+- To activate the virtual environment source 
+
 
 venv/bin/activate
 
 - To install neccessary libraries:
 
+
 pip install -r requirements.txt
 
 - To run the app:
+
 
 flask run
 
