@@ -34,5 +34,9 @@ flask run
 
 flask run --debug
 
+- To install Docker-compose
+
+sudo apt install docker-compose
+
 
 NB: You don't need to set export FLASK_APP= since I did it myself. You only need to install python-dotenv (requirements.txt)
