@@ -1,0 +1,13 @@
+version: '3'
+services:
+  sqlite:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sqlite-container
+    volumes:
+      - ./instance:/data
+    command: []
+    stdin_open: true
+    tty: true
+
