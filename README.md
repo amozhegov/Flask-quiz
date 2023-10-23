@@ -16,6 +16,11 @@ venv/bin/activate
 
 pip install -r requirements.txt
 
+
+- To install sqlite3:
+
+sudo apt install sqlite3
+
 - To run the app:
 
 
