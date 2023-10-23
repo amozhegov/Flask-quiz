@@ -39,4 +39,47 @@ flask run --debug
 sudo apt install docker-compose
 
 
+
+
+How to build docker image:
+
+Create a docker file and add this code
+
+- Use a base Python image
+  
+FROM python:3.8-slim
+
+- Install system dependencies
+  
+RUN apt-get update -y && apt-get install -y libpq-dev
+
+- Install Python dependencies
+  
+COPY requirements.txt /app/
+WORKDIR /app
+RUN pip install -r requirements.txt
+
+- Copy the application into the container
+
+COPY . /app/
+
+- Define an environment variable for Flask
+
+  
+ENV FLASK_APP=app.py
+ENV FLASK_RUN_HOST=0.0.0.0
+
+- Create the database and apply migrations (if necessary)
+
+  
+RUN flask db init
+RUN flask db migrate
+RUN flask db upgrade
+
+- Run the application
+
+  
+CMD ["flask", "run"]
+
+
 NB: You don't need to set export FLASK_APP= since I did it myself. You only need to install python-dotenv (requirements.txt)
