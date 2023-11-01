@@ -1,4 +1,4 @@
-A small web app that displays a list of quizzes according to user's input and stores questions to the database
+A small web app that displays a list of quizzes from API according to user's input and stores data to the database
 
 - Recommend to use virtual environment. 
 To install it: 
