@@ -1,5 +1,5 @@
-**Quiz web app with Python Flask, API integration, and SQLite database.
-**
+**Quiz web app with Python Flask, API integration, and SQLite database.**
+
 
 This web app that displays a list of quizzes from API according to user's input and stores data to the database
 
